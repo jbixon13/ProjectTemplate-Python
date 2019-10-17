@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3-alpine
 
 COPY server.py /
 COPY requirements.txt /
