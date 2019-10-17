@@ -28,13 +28,13 @@ Once that completes you can run the application by running the following from th
 ```shell
 python server.py
 ```
-*note* in some environments you may need to run `python3` instead of `python` if you're running both Python 2.6 adn 3.x.
+*note* in some environments you may need to run `python3` instead of `python` if you're running both Python 2.6 and 3.x.
 
 #### Docker
 Alternatively if you wish to run this in Docker instead of on your local you may do so using the included `Dockerfile`. To use the Docker simply run the following commands:
 ```shell
 docker build -t pythonhelloworld:latest .
-docker run -d -p 5858:5858 pythonhelloworld:latest
+docker run -d -p --rm 5858:5858 pythonhelloworld:latest
 ```
 To stop the conatiner run:
 ```shell
